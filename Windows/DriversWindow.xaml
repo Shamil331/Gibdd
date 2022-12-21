@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gibdd.Windows"
         mc:Ignorable="d"
-        Title="Карточка водителя" MinHeight="450" MinWidth="850" Height="450" Width="850">
+        Title="Карточка водителя" MinHeight="550" MinWidth="850" Height="450" Width="850">
     <Window.Resources>
         <Style TargetType="TextBox" BasedOn="{StaticResource CommonTb}">
             <Setter Property="Height" Value="30"/>
