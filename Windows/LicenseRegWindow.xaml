@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="LicenseRegWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Окно добавления ВУ водителя" HorizontalAlignment="Center" Grid.ColumnSpan="3"/>
+        <ComboBox Grid.Column="0" Grid.Row="1" >
+            
+        </ComboBox>
     </Grid>
 </Window>

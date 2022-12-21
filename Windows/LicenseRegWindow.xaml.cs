@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using db=Gibdd.Models;
 
 namespace Gibdd.Windows
 {
@@ -19,9 +20,11 @@ namespace Gibdd.Windows
     /// </summary>
     public partial class LicenseRegWindow : Window
     {
-        public LicenseRegWindow()
+        List<db.Driver> _drivers;
+        public LicenseRegWindow(List<db.Driver> drivers)
         {
             InitializeComponent();
+            _drivers = drivers;
         }
     }
 }

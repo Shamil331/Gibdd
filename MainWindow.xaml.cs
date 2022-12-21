@@ -34,7 +34,9 @@ namespace Gibdd
 
         private void DriversBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Windows.DriversWindow driversWindow = new Windows.DriversWindow();
+            driversWindow.Show();
+            this.Close();
         }
 
         private void PenaltiesBtn_Click(object sender, RoutedEventArgs e)

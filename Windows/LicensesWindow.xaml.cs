@@ -47,7 +47,9 @@ namespace Gibdd.Windows
                     MessageBox.Show("У всех водителей в системе есть водительские удостоверения");
                 else
                 {
-
+                    LicenseRegWindow licenseRegWindow = new LicenseRegWindow(t);
+                    licenseRegWindow.Show();
+                    this.Close();
                 }
             }
         }
