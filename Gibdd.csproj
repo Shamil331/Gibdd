@@ -192,6 +192,7 @@
       <DependentUpon>GibddModel.edmx</DependentUpon>
       <LastGenOutput>GibddModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\driver.jpg" />
     <Resource Include="Resources\logo.png" />
     <Resource Include="Resources\photo\001-happy-18.png" />
     <Resource Include="Resources\photo\002-cool-5.png" />

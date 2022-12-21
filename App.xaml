@@ -4,6 +4,21 @@
              xmlns:local="clr-namespace:Gibdd"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="TextBox" x:Key="CommonTb">
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+        <Style TargetType="Label" x:Key="CommonLbl">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontFamily" Value="Bahnschrift SemiLight"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="GroupBox" x:Key="CommonGb">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontFamily" Value="Bahnschrift SemiLight"/>
+        </Style>
+        <Style TargetType="Button" x:Key="CommonBtn">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontFamily" Value="Bahnschrift SemiLight"/>
+        </Style>
     </Application.Resources>
 </Application>
