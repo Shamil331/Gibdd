@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gibdd.Windows"
         mc:Ignorable="d"
-        Title="Карточка водителя" MinHeight="550" MinWidth="850" Height="450" Width="850">
+        Title="Карточка водителя" MinHeight="450" MinWidth="850" Height="450" Width="850">
     <Window.Resources>
         <Style TargetType="TextBox" BasedOn="{StaticResource CommonTb}">
             <Setter Property="Height" Value="30"/>
@@ -14,14 +14,19 @@
         <Style TargetType="Button" BasedOn="{StaticResource CommonBtn}"/>
     </Window.Resources>
     <DockPanel>
-        <ListBox Name="driversLbx" Width="200"/>
+        <ListBox Width="200" x:Name="DriversList">
+            
+        </ListBox>
         <StackPanel Orientation="Horizontal">
             <StackPanel Margin="10">
-                <Image Name="pictureImage" Width="150" Height="150" Stretch="Fill" Source="../Resources/driver.jpg" Margin="0 5"/>
-                <Button x:Name="addLicenseBtn" Content="Лицензии" Margin="0 5"/>
-                <Button x:Name="delDriverBtn" Content="Удалить" Margin="0 5"/>
+                <Button x:Name="imgDriverBtn" Click="imgDriverBtn_Click"  BorderBrush="{x:Null}" Background="{x:Null}" Cursor="Pen">
+                    <Image Name="pictureImage" Width="150" Height="150" Stretch="Fill" Source="../Resources/driver.jpg" Margin="0 5"/>
+                </Button>
+                <Button x:Name="addLicenseBtn" Content="История ВУ" Margin="0 5"/>
+                <Button x:Name="editDriverBtn" Content="Изменить" Margin="0 5"/>
                 <TextBlock LineStackingStrategy="MaxHeight" LineHeight="10" TextWrapping="Wrap">
-
+                    Всего изменений ВУ:<LineBreak/>
+                    <Run Name="sumLicensesTb" Text="0" FontSize="16"/>
                 </TextBlock>
             </StackPanel>
             <Grid Width="450">
@@ -58,14 +63,8 @@
                 <TextBox Grid.Column="1" Grid.Row="2" x:Name="middleNameTb"/>
                 <TextBox Grid.Column="1" Grid.Row="3" x:Name="serPassportTb"/>
                 <TextBox Grid.Column="1" Grid.Row="4" x:Name="nomPassportTb"/>
-                <StackPanel Grid.Column="1" Grid.Row="5" Orientation="Horizontal">
-                    <TextBox x:Name="townRegAddressTb" Width="100" Margin="0 0 10 0"/>
-                    <TextBox x:Name="fullRegAddressTb" Width="115"/>
-                </StackPanel>
-                <StackPanel Grid.Column="1" Grid.Row="6" Orientation="Horizontal">
-                    <TextBox x:Name="townLiveAddressTb" Width="100" Margin="0 0 10 0"/>
-                    <TextBox x:Name="fullLiveAddressTb" Width="115"/>
-                </StackPanel>
+                <TextBox Grid.Column="1" Grid.Row="5" x:Name="townRegAddressTb"/>
+                <TextBox Grid.Column="1" Grid.Row="6" x:Name="townLiveAddressTb"/>
                 <TextBox Grid.Column="1" Grid.Row="7" x:Name="fullComnpanyNameTb"/>
                 <TextBox Grid.Column="1" Grid.Row="8" x:Name="jobNameTb"/>
                 <TextBox Grid.Column="1" Grid.Row="9" x:Name="phoneNumberTb"/>

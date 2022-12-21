@@ -45,7 +45,13 @@ namespace Gibdd.Models
                 return "../Resources/photo/" + this.Photo_Name;
             }
         }
-    
+        public string FullName
+        {
+            get
+            {
+                return this.Name + " " + this.Middle_Name + " " + this.Surname;
+            }
+        }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Car> Car { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
