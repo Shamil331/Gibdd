@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gibdd.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,8 @@ namespace Gibdd
         public MainWindow()
         {
             InitializeComponent();
+            AddDriverWindow window = new AddDriverWindow();
+            window.Show();
         }
 
         private void LicensesBtn_Click(object sender, RoutedEventArgs e)
@@ -34,7 +37,8 @@ namespace Gibdd
 
         private void DriversBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            DriversWindow window = new DriversWindow();
+            window.Show();
         }
 
         private void PenaltiesBtn_Click(object sender, RoutedEventArgs e)

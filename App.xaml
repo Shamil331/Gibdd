@@ -7,6 +7,7 @@
         <Style TargetType="TextBox" x:Key="CommonTb">
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="FontFamily" Value="Bahnschrift SemiLight"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
         </Style>
         <Style TargetType="Label" x:Key="CommonLbl">
             <Setter Property="FontSize" Value="18"/>

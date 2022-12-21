@@ -37,7 +37,10 @@ namespace Gibdd.Models
         public string Photo_Name { get; set; }
         public byte[] Photo_Image { get; set; }
         public string Description { get; set; }
-
+        public string fullName
+        {
+            get { return this.Surname + " " + this.Name[0] + "." + this.Middle_Name[0] + "."; }
+        }
         public string ImagePath
         {
             get
