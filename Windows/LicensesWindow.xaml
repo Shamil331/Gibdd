@@ -11,8 +11,7 @@
             <RowDefinition/>
             <RowDefinition Height="0.1*"/>
         </Grid.RowDefinitions>
-        <!--<WrapPanel Orientation="Vertical" ScrollViewer.IsDeferredScrollingEnabled="True" ScrollViewer.CanContentScroll="True">-->
-            <ListView x:Name="LicensesList" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Center" Grid.Row="0">
+        <ListView x:Name="LicensesList" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Center" Grid.Row="0">
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel>

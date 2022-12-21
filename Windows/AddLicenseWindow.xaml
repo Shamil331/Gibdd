@@ -18,14 +18,30 @@
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Text="Серия ВУ"></TextBlock>
-        <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Text="Номер ВУ"></TextBlock>
-        <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Text="Срок действия"></TextBlock>
-        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Text="Выберите водителя"></TextBlock>
-        <TextBox Grid.Row="0" Grid.Column="1" Height="50"></TextBox>
-        <TextBox Grid.Row="1" Grid.Column="1" Height="50"></TextBox>
-        <TextBox Grid.Row="2" Grid.Column="1" Height="50"></TextBox>
-        <TextBox Grid.Row="3" Grid.Column="1" Height="50"></TextBox>
-        <Button Grid.Row="4" Grid.Column="1" Content="Создать" Height="50"></Button>
+        <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Text="Серия ВУ"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Text="Номер ВУ"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Text="Срок действия"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Text="Выберите водителя"/>
+        <TextBox x:Name="SerialTb" Grid.Row="0" Grid.Column="1" Height="50"/>
+        <TextBox x:Name="NumberTb" Grid.Row="1" Grid.Column="1" Height="50"/>
+        <TextBox x:Name="ExpireYearsTb" Grid.Row="2" Grid.Column="1" Height="50"/>
+        <ComboBox Grid.Row="3" Grid.Column="1" Height="50" x:Name="DriversList"/>
+        <Button x:Name="AddBtn" Grid.Row="4" Grid.Column="1" Content="Добавить" Height="50" Click="AddBtn_Click"/>
+        <ListView Grid.Column="0" Grid.Row="4" x:Name="CategoriesList" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel>
+                        
+                    </WrapPanel>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <CheckBox x:Name="CategoriesCbx" Content="{Binding Name}" Checked="CategoriesCbx_Checked"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Window>

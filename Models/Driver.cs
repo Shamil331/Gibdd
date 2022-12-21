@@ -37,7 +37,6 @@ namespace Gibdd.Models
         public string Photo_Name { get; set; }
         public byte[] Photo_Image { get; set; }
         public string Description { get; set; }
-
         public string ImagePath
         {
             get
@@ -49,7 +48,7 @@ namespace Gibdd.Models
         {
             get
             {
-                return this.Name + " " + this.Middle_Name + " " + this.Surname;
+                return this.Surname + " " + this.Name[0] + "." + this.Middle_Name[0] + ".";
             }
         }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
