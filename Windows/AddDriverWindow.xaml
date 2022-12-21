@@ -27,59 +27,59 @@
             <Button x:Name="addPictureBtn" Content="Обзор" Margin="0 5 0 5"/>
             <StackPanel DockPanel.Dock="Top">
                 <Label Content="Замечания:" FontFamily="Bahnschrift SemiLight"/>
-                <TextBox x:Name="descriptionTb" Margin="0" MinHeight="100" MaxHeight="190" MaxWidth="160" TextWrapping="Wrap"/>
+                <TextBox x:Name="descriptionTb" Margin="0" MinHeight="100" MaxHeight="190" MaxWidth="160" TextWrapping="Wrap" VerticalContentAlignment="Stretch"/>
             </StackPanel>
-            <Button x:Name="addDriverBtn" Content="Готово" IsEnabled="False" Margin="0 10 0 0"/>
+            <Button x:Name="addDriverBtn" Content="Готово" IsEnabled="False" Margin="0 10 0 0" Click="addDriverBtn_Click"/>
         </StackPanel>
         <GroupBox DockPanel.Dock="Top" BorderBrush="{x:Null}">
             <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
                 <StackPanel>
-                    <Label Content="Фамилия:"/>
-                    <TextBox x:Name="surNameTb"/>
+                    <Label Content="*Фамилия:"/>
+                    <TextBox x:Name="surNameTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
                 <StackPanel>
-                    <Label Content="Имя:"/>
-                    <TextBox x:Name="nameTb"/>
+                    <Label Content="*Имя:"/>
+                    <TextBox x:Name="nameTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
                 <StackPanel>
-                    <Label Content="Отчество:"/>
-                    <TextBox x:Name="middleNameTb"/>
+                    <Label Content="*Отчество:"/>
+                    <TextBox x:Name="middleNameTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
             </StackPanel>
         </GroupBox>
         <GroupBox DockPanel.Dock="Top" Header="Информация о паспорте">
             <StackPanel Orientation="Horizontal">
                 <StackPanel>
-                    <Label Content="Серия:"/>
-                    <TextBox x:Name="serPassportTb"/>
+                    <Label Content="*Серия:"/>
+                    <TextBox x:Name="serPassportTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
                 <StackPanel>
-                    <Label Content="Номер:"/>
-                    <TextBox x:Name="nomPassportTb"/>
+                    <Label Content="*Номер:"/>
+                    <TextBox x:Name="nomPassportTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
             </StackPanel>
         </GroupBox>
         <GroupBox DockPanel.Dock="Top" Header="Адрес регистрации">
             <StackPanel Orientation="Horizontal">
                 <StackPanel>
-                    <Label Content="Город:"/>
-                    <TextBox x:Name="townRegAddressTb"/>
+                    <Label Content="*Город:"/>
+                    <TextBox x:Name="townRegAddressTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
                 <StackPanel>
-                    <Label Content="Точный адрес:"/>
-                    <TextBox x:Name="fullRegAddressTb"/>
+                    <Label Content="*Точный адрес:"/>
+                    <TextBox x:Name="fullRegAddressTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
             </StackPanel>
         </GroupBox>
         <GroupBox DockPanel.Dock="Top" Header="Адрес проживания">
             <StackPanel Orientation="Horizontal">
                 <StackPanel>
-                    <Label Content="Город:"/>
-                    <TextBox x:Name="townLiveAddressTb"/>
+                    <Label Content="*Город:"/>
+                    <TextBox x:Name="townLiveAddressTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
                 <StackPanel>
-                    <Label Content="Точный адрес:"/>
-                    <TextBox x:Name="fullLiveAddressTb"/>
+                    <Label Content="*Точный адрес:"/>
+                    <TextBox x:Name="fullLiveAddressTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
             </StackPanel>
         </GroupBox>
@@ -87,23 +87,23 @@
             <StackPanel Orientation="Horizontal">
                 <StackPanel>
                     <Label Content="Место работы:"/>
-                    <TextBox x:Name="companyNameTb"/>
+                    <TextBox x:Name="companyNameTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
                 <StackPanel>
                     <Label Content="Должность:"/>
-                    <TextBox x:Name="jobNameTb"/>
+                    <TextBox x:Name="jobNameTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
             </StackPanel>
         </GroupBox>
         <GroupBox DockPanel.Dock="Top" Header="Контактная информация">
             <StackPanel Orientation="Horizontal">
                 <StackPanel>
-                    <Label Content="Номер телефона:"/>
-                    <TextBox x:Name="phoneNumberTb"/>
+                    <Label Content="*Номер телефона:"/>
+                    <TextBox x:Name="phoneNumberTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
                 <StackPanel>
-                    <Label Content="Электронный адрес:"/>
-                    <TextBox x:Name="eMailTb"/>
+                    <Label Content="*Электронный адрес:"/>
+                    <TextBox x:Name="eMailTb" TextChanged="surNameTb_TextChanged"/>
                 </StackPanel>
             </StackPanel>
         </GroupBox>
