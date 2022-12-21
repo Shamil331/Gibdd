@@ -94,7 +94,7 @@ namespace Gibdd.Windows
             addDriverBtn.IsEnabled = false;
 
             _context.Driver.Add(driver);
-            //_context.SaveChanges();
+            _context.SaveChanges();
         }
 
         private void surNameTb_TextChanged(object sender, TextChangedEventArgs e)

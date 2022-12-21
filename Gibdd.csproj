@@ -73,9 +73,6 @@
     <Compile Include="Windows\DriversWindow.xaml.cs">
       <DependentUpon>DriversWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\LicenseRegWindow.xaml.cs">
-      <DependentUpon>LicenseRegWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Windows\LicensesWindow.xaml.cs">
       <DependentUpon>LicensesWindow.xaml</DependentUpon>
     </Compile>
@@ -100,10 +97,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\DriversWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\LicenseRegWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

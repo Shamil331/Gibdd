@@ -1,17 +1,7 @@
-﻿using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using db = Gibdd.Models;
 
 namespace Gibdd.Windows
@@ -48,11 +38,6 @@ namespace Gibdd.Windows
             jobNameTb.Text = _driver.Job_Name;
             phoneNumberTb.Text = _driver.Phone;
             emailTb.Text = _driver.Email;
-        }
-
-        private void imgDriverBtn_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void editDriverBtn_Click(object sender, RoutedEventArgs e)

@@ -19,11 +19,8 @@
         </ListBox>
         <StackPanel Orientation="Horizontal">
             <StackPanel Margin="10">
-                <Button x:Name="imgDriverBtn" Click="imgDriverBtn_Click"  BorderBrush="{x:Null}" Background="{x:Null}" Cursor="Pen">
-                    <Image Name="pictureImage" Width="150" Height="150" Stretch="Fill" Source="../Resources/driver.jpg" Margin="0 5"/>
-                </Button>
-                <!--<Button x:Name="addLicenseBtn" Content="История ВУ" Margin="0 5"/>-->
-                <Button x:Name="editDriverBtn" Content="Изменить" Margin="0 5" Click="editDriverBtn_Click"/>
+                <Image Name="pictureImage" Width="150" Height="150" Stretch="Fill" Source="../Resources/driver.jpg" Margin="0 5"/>
+                    <Button x:Name="editDriverBtn" Content="Изменить" Margin="0 5" Click="editDriverBtn_Click"/>
                 <TextBlock LineStackingStrategy="MaxHeight" LineHeight="10" TextWrapping="Wrap">
                     Всего изменений ВУ:<LineBreak/>
                     <Run Name="sumLicensesTb" Text="0" FontSize="16"/>
