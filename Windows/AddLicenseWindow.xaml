@@ -1,0 +1,31 @@
+﻿<Window x:Class="Gibdd.Windows.AddLicenseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gibdd.Windows"
+        mc:Ignorable="d"
+        Title="Создать водительское удостоверение" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Text="Серия ВУ"></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Text="Номер ВУ"></TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Text="Срок действия"></TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Text="Выберите водителя"></TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="1" Height="50"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Height="50"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Height="50"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="1" Height="50"></TextBox>
+        <Button Grid.Row="4" Grid.Column="1" Content="Создать" Height="50"></Button>
+    </Grid>
+</Window>
